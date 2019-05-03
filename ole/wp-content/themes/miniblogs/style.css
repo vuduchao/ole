@@ -1,0 +1,779 @@
+/*
+Theme Name: Mini Blog
+Theme URI: https://lar.vn/                       
+Author: Tòng Huỳnh 
+Author URI: https://lar.vn/                       
+Description: Đây là giao diện mini blog cá nhân
+Version: 1.0
+License: MIT
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, mini blog 
+*/
+a:focus, a:hover {
+	color: #E54800 !important;
+	text-decoration: none;
+}
+/*menu*/
+.bg-dark {
+	width: 100%;
+	display: table;
+	background: #434a50 !important;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+	margin-bottom: 0px !important;
+	padding: 0px;
+}
+.container #menu-menu-1{
+	padding-left: 0px;
+	text-align: left;
+	float: left;
+	margin-left: 0px !important;
+}
+.container #menu-menu-1 li a {
+	color: #ccc;
+	font-size: 14px;
+	padding: 10px 13px;
+	transition: all .3s ease-in-out;
+	border-right: 1px solid #596066;
+}
+.container #menu-menu-1 li {
+	list-style: none;
+	float: left;
+	position: relative;
+	border-right: 1px solid #2d3135;
+}
+.textwidget{
+	padding: 20px;
+}
+.widget_categories ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget_categories ul li{
+	width: 50%;
+	float: left;
+	padding: 7px 12px 7px 12px;
+}
+
+.page-numbers{
+	position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-numbers.current{
+	z-index: 1;
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+.fuild-img{
+	width: 100% !important;
+	height: auto !important;
+}
+
+.post-small{
+	width: 120px;
+	height: auto;
+}
+
+.carousel-item {
+    width: 100%; 
+    max-height: 350px !important;
+}
+/*custom header css*/
+.topHeader {
+	width: 100%;
+	height: 40px;
+	display: table;
+	background: #fff;
+	background: -moz-linear-gradient(top, #fff 0, #e6e4e4 97%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(97%, #e6e4e4));
+	background: -webkit-linear-gradient(top, #fff 0, #e6e4e4 97%);
+	background: -o-linear-gradient(top, #fff 0, #e6e4e4 97%);
+	background: -ms-linear-gradient(top, #fff 0, #e6e4e4 97%);
+	background: linear-gradient(to bottom, #fff 0, #e6e4e4 97%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e4e4', GradientType=0);
+}
+.topHeader .logo {
+	width: 25%;
+	float: left;
+	margin: 10px 0;
+}
+.topHeader .hdrRight {
+	float: right;
+	width: 100%;
+	height: 35px;
+	text-align: right;
+}
+.topHeader .hdrRight .hdrNav {
+	display: table;
+	margin-bottom: 7px;
+	float: right;
+}
+.topHeader .hdrRight .hdrNav ul {
+	padding-left: 0px;
+	border: 1px solid #ccc;
+	border-radius: 0 0 7px 7px;
+	border-top: 0;
+	float: right;
+	vertical-align: middle;
+	height: 25px;
+	background: #fff;
+	background: -moz-linear-gradient(top, #fff 0, #f5f5f5 50%, #e1e1e1 51%, #fff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(50%, #f5f5f5), color-stop(51%, #e1e1e1), color-stop(100%, #fff));
+	background: -webkit-linear-gradient(top, #fff 0, #f5f5f5 50%, #e1e1e1 51%, #fff 100%);
+	background: -o-linear-gradient(top, #fff 0, #f5f5f5 50%, #e1e1e1 51%, #fff 100%);
+	background: -ms-linear-gradient(top, #fff 0, #f5f5f5 50%, #e1e1e1 51%, #fff 100%);
+	background: linear-gradient(to bottom, #fff 0, #f5f5f5 50%, #e1e1e1 51%, #fff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+}
+.topHeader .hdrRight .hdrNav ul li {
+	border-right: 0;
+}
+.topHeader_right ul li {
+	list-style: none;
+	float: left;
+	position: relative;
+	border-right: 1px solid #2d3135;
+
+}
+.topHeader .hdrRight .hdrNav ul li a {
+	border-right: 1px solid #2e85ae;
+	color: #1291d1;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 5px;
+	transition: all .5s ease 0;
+	padding: 0px 5px;
+}
+.form_s {
+	font-size: 13px;
+	float: right;
+	border: #ff5000 2px solid;
+	height: 27px;
+	width: 350px;
+	border-radius: 3px;
+	background: #fff;
+	margin: 0 23px 7px 0;
+	line-height: 0px;
+}
+.key_home {
+	border: none !important;
+	width: 270px;
+	height: 21px;
+	border: 0px;
+	background: #ffffff;
+	float: left;
+	margin: 0px;
+	padding: 3px;
+}
+#search_home {
+	color: #FFF;
+	border: #ff5000 2px solid;
+	float: right;
+	height: 23px;
+	padding-top: 1px;
+	background: #ff5000;
+	text-align: center;
+}
+.topHeader_right{
+	width: 75%;
+	float: right;
+}
+/*footer*/
+footer.bg-dark{
+	background: #363636 !important;
+	color: #666;
+}
+.adv {
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+.adv .adv-block:last-child {
+	margin-bottom: 10px;
+}
+.adv .adv-block {
+	margin-top: 10px;
+}
+footer .copyright a {
+	color: #e54800;
+}
+/*seagames*/
+.seagames {
+	width: 100%;
+	height: 50px;
+	display: table;
+	margin: 0 0 20px;
+	border-left: 0;
+	border-right: 0;
+	padding-bottom: 20px;
+}
+h2.titBox {
+	width: 100%;
+	text-align: left;
+	padding: 11px 0;
+	font-family: "utmNeo";
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 0;
+	border-bottom: 3px solid #eee;
+}
+h2.titBox a {
+	border-bottom: 3px solid #ff4e00;
+	padding: 8px 0;
+	color: #333;
+	text-transform: uppercase;
+}
+.sgNews {
+	padding-left: 0;
+	padding-right: 7.5px;
+	float: left;
+}
+.mainNewsBox {
+	width: 100%;
+}
+.mainNewsBox img {
+	width: 100%;
+}
+.mainNewsBox h3 {
+	margin-top: 10px;
+}
+.mainNewsBox h3 a {
+	font-size: 18px;
+	color: #ff4e00;
+	font-family: arial;
+}
+.mainNewsBox p {
+	font-size: 12px;
+	text-align: justify;
+	color: #666;
+	height: 36px;
+	line-height: 18px;
+	overflow: hidden;
+}
+.subNewsBox {
+	width: 100%;
+	display: table;
+}
+.subNewsBox h4 {
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+.subNewsBox h4 a {
+	font-size: 14px;
+	color: #000;
+	font-family: arial;
+	display: block;
+	line-height: 18px;
+	font-weight: bold;
+}
+.subNewsBox .col-sm-6 {
+	padding-left: 0;
+	float: left;
+}
+.subNewsBox .col-sm-6 a {
+	display: block;
+	width: 100%;
+}
+.subNewsBox .col-sm-6 img {
+	width: 100%;
+}
+.subNewsBox .col-sm-6:last-child {
+	padding: 0;
+}
+.subNewsBox .col-sm-6 p {
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: justify;
+	font-size: 12px;
+	color: #666;
+	margin: 0;
+	overflow: hidden;
+	line-height: 18px;
+}
+.sgDirect {
+	padding-right: 0;
+	padding-left: 7.5px;
+	float: left;
+}
+.sgDirect .titImgNewsBox:first-child {
+	padding-top: 0;
+}
+.sgDirect .titImgNewsBox {
+	width: 100%;
+	display: block;
+	float: left;
+	padding: 7.5px 0;
+}
+.titImgNewsBox {
+	width: 25%;
+	float: left;
+	padding-left: 7.5px;
+	padding-bottom: 17px;
+	position: relative;
+}
+.sgDirect .titImgNewsBox img {
+	width: 50%;
+	padding-right: 7.5px;
+	float: left;
+}
+.sgDirect .titImgNewsBox h4 {
+	width: 50%;
+	padding-left: 7.5px;
+	float: left;
+	margin: 0;
+	line-height: 16px;
+}
+.titImgNewsBox h4 {
+	margin-top: 5px;
+	display: block;
+	float: left;
+	width: 100%;
+}
+.titImgNewsBox h4 a {
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+	font-family: arial;
+	line-height: 18px;
+	height: auto;
+	overflow: hidden;
+	display: block;
+	height: 36px;
+}
+.sgDirect .titImgNewsBox h4 .newsTime {
+	display: block;
+	width: 100%;
+	float: left;
+}
+span.newsTime {
+	color: #999;
+	font-size: 11px;
+	padding-right: 5px;
+}
+.titNewsBox {
+	width: 100%;
+	display: table;
+	margin-top: 10px;
+	float: left;
+}
+.titNewsBox a {
+	color: #08c;
+	font-size: 12px;
+	display: block;
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	background: url(images/list-icon-square.jpg) left 6px no-repeat;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+}
+/*top hot*/
+.leftCol .topHot {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.leftCol .topHot .slider {
+	width: 72%;
+	padding: 0;
+	float: left;
+	display: block;
+}
+.leftCol .topHot .slider .owl-carousel .item .wapImg {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 299;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0.85) 99%, rgba(0, 0, 0, 0.85) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(38%, rgba(0, 0, 0, 0)), color-stop(99%, rgba(0, 0, 0, 0.85)), color-stop(100%, rgba(0, 0, 0, 0.85)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0.85) 99%, rgba(0, 0, 0, 0.85) 100%);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0.85) 99%, rgba(0, 0, 0, 0.85) 100%);
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0.85) 99%, rgba(0, 0, 0, 0.85) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 38%, rgba(0, 0, 0, 0.85) 99%, rgba(0, 0, 0, 0.85) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#d9000000', GradientType=0);
+}
+.leftCol .topHot .slider .owl-carousel .item p {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	text-align: center;
+	z-index: 10000;
+}
+.leftCol .topHot .slider .owl-carousel .item p a {
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.leftCol .topHot .newsTop {
+	width: 28%;
+	padding-left: 15px;
+	float: right;
+	overflow: auto;
+	position: relative;
+	height: 315px;
+}
+.leftCol .topHot .newsTop ul {
+	padding: 0;
+}
+.leftCol .topHot .newsTop ul li {
+	list-style: none;
+	border-bottom: 1px solid #eee;
+}
+.leftCol .topHot .newsTop ul li a {
+	font-weight: bold;
+	display: block;
+	font-family: Arial;
+	font-size: 12px;
+	color: #333;
+	padding: 5px 0;
+}
+.owl-dots{
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	text-align: center;
+	z-index: 10000;
+}
+/*soccervideo*/
+.soccerVideo {
+	padding: 0;
+	display: table;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.content_left .mainNewsBox50 {
+	width: 50%;
+	padding-right: 15px;
+	float: left;
+	position: relative;
+	margin-bottom: 15px;
+}
+.soccerVideo .mainNewsBox a {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.soccerVideo .mainNewsBox a {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.soccerVideo .subNewsBox, .soccerVideo .titNewsBox, .soccerVideo .titSubNewsBox {
+	width: 50%;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+}
+.soccerVideo .titSubNewsBox {
+	padding-right: 0;
+	margin: 20px 0 0;
+}
+.soccerVideo .titSubNewsBox h4 a {
+	font-size: 14px;
+	font-family: arial;
+	color: #000;
+	font-weight: bold;
+}
+.soccerVideo .titSubNewsBox p {
+	text-align: justify;
+	font-size: 12px;
+	color: #666;
+}
+.nd .titSubNewsBox p {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+/*englandFootball*/
+.content_left .friends {
+	padding-left: 0;
+	padding-right: 7.5px;
+}
+.englandFootball, .footballClub {
+	padding: 0 0 0 7.5px;
+}
+.englandFootball, .italiaFootball {
+	display: table;
+	width: 50%;
+	margin-bottom: 10px;
+	float: left;
+}
+.englandFootball .mainNewsBox {
+	/*height: 310px;*/
+}
+
+.englandFootball .subNewsBox, .italiaFootball .subNewsBox {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	height: 160px;
+}
+/*single post*/
+.breadcrumb{
+	margin-bottom: 10px;
+	background: #fafafa;
+	padding-left: 10px;
+	margin-top: 10px;
+}
+a.breadcrumb-item {
+	list-style: none;
+	float: left;
+	padding: 5px 5px 5px 0;
+	color: #ff4e00;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+	display: inline-block;
+	padding-right: .5rem;
+	padding-left: .5rem;
+	color: #6c757d;
+	content: ">";
+}
+.breadcrumb-item.active {
+	color: #6c757d;
+	font-size: 12px;
+}
+span.time {
+	font-size: 12px;
+	color: #999;
+	font-style: italic;
+	display: block;
+	line-height: 20px;
+	vertical-align: bottom;
+}
+.leftCol h1 {
+	display: table;
+	width: 100%;
+	font-size: 20px;
+	color: #222;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+	line-height: 30px;
+}
+h4.titBox {
+	width: 100%;
+	text-align: left;
+	padding: 11px 0;
+	font-family: "utmNeo";
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 0;
+	border-bottom: 3px solid #eee;
+}
+h4.titBox a {
+	border-bottom: 3px solid #ff4e00;
+	padding: 8px 0;
+	color: #333;
+	text-transform: uppercase;
+}
+.titImgNewsBox h6 a {
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+	font-family: arial;
+	line-height: 18px;
+	height: auto;
+	overflow: hidden;
+	display: block;
+	height: 36px;
+}
+.soccerVideo .cateSameNews span {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.soccerVideo .cateSameNews a {
+	color: #08c;
+	font-size: 12px;
+	display: block;
+	float: left;
+	margin: 5px 0;
+	background: url(images/list-icon-square.jpg) no-repeat scroll left 6px rgba(0, 0, 0, 0);
+	padding-left: 10px;
+}
+.soccerVideo .cateSameNews i {
+	display: block;
+	float: left;
+	padding-left: 10px;
+	color: #666;
+	font-size: 11px;
+	margin: 5px 10px 5px 0;
+}
+.dtBoxr, .lsBoxr {
+	padding-left: 0;
+	padding-right: 0;
+}
+.cateNewsBox100 .col-sm-4, .dtBoxl, .lsBoxl {
+	padding-left: 0;
+	clear: both;
+}
+.dtBoxl , .dtBoxr{
+	float: left;
+}
+.dtBoxr .soccerVideo .titImgNewsBox {
+	width: 100%;
+	height: auto;
+	padding-left: 0;
+}
+.soccerVideo .titImgNewsBox {
+	height: 150px;
+	display: block;
+	float: left;
+}
+.dtBoxr .soccerVideo .cateSameNews a {
+	width: 100%;
+}
+h4.titBox span {
+	border-bottom: 3px solid #ff4e00;
+	padding: 8px 0;
+	color: #333;
+	text-transform: uppercase;
+}
+/*category*/
+.topHotImg {
+	padding: 0;
+	float: left;
+}
+.topHotImg img {
+	width: 100%;
+}
+.cateNewsTop {
+	padding-right: 0;
+	float: left;
+}
+.cateNewsTop h2 {
+	font-size: 18px;
+	margin-top: 0;
+}
+.cateNewsTop h2 a {
+	color: #e03c0a;
+	font-family: "utmNeo";
+	font-weight: bold;
+}
+.cateNewsTop p {
+	font-size: 12px;
+	text-align: justify;
+}
+.cateNewsTop span.newsTime {
+	display: block;
+	margin-bottom: 10px;
+}
+.cateNewsTop .titNewsBox a {
+	overflow: inherit;
+	height: auto;
+}
+.wrapcate{
+	padding-top: 20px;
+}
+.cateNewsBox100 {
+	width: 100%;
+	padding: 0;
+	padding: 10px 0px;
+}
+.cateNewsBox100 img{
+	width: 100%;
+}
+.cateNewsBox100 .col-sm-4, .dtBoxl, .lsBoxl {
+	padding-left: 0;
+	clear: both;
+	float: left;
+}
+.cateNewsBox100 .col-sm-8 {
+	padding-left: 10px;
+	padding-right: 0;
+	float: left;
+}
+.cateNewsBox100 h2 {
+	margin-top: 0;
+	line-height: 15px;
+}
+.cateNewsBox100 h2 a {
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+}
+.cateNewsBox100 p {
+	color: #666;
+	font-size: 13px;
+}
+.cateNewsBox100 span.newsTime {
+	display: block;
+	margin-bottom: 10px;
+	color: #999;
+}
+/*slide bar*/
+.directBoxRm, .directBox, .directBoxBXH {
+	width: 100%;
+	display: table;
+	margin-bottom: 20px;
+}
+ul.drView  {
+	padding-left: 0px;
+}
+ul.drView li {
+	width: 100%;
+	float: left;
+	list-style: none;
+	padding: 5px 0;
+}
+.directBoxRm ul li span.rmLevel {
+	display: block;
+	width: 10%;
+	float: left;
+	text-align: center;
+}
+ul.drView li span {
+	line-height: 15px;
+	display: block;
+	float: left;
+	width: 15%;
+}
+.directBoxRm ul li span.rmLevel button {
+	border: 0;
+	background: #666;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 3px;
+	margin-top: 2px;
+	width: 20px;
+	height: 20px;
+	padding: 0 !important;
+	line-height: 20px;
+	vertical-align: middle;
+}
+.directBoxRm ul li span.rmCt {
+	display: block;
+	width: 90%;
+	float: right;
+}
+.directBoxRm ul li span.rmCt a {
+	text-align: left;
+	font-size: 13px;
+	color: #333;
+	line-height: 24px;
+}
